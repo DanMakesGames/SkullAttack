@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 66180c1ae4e3907449c0dea06a2bc5e5
+timeCreated: 1509160593
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: Box01
+    100006: Box02
+    100008: Cylinder01
+    100010: Sphere01
+    100012: Sphere02
+    100014: Sphere03
+    100016: Sphere04
+    100018: wing
+    100020: wing01
+    100022: wing02
+    100024: wing03
+    100026: wingBack
+    100028: wingBack02
+    100030: wingBack03
+    100032: wingBack04
+    400000: //RootNode
+    400002: body
+    400004: Box01
+    400006: Box02
+    400008: Cylinder01
+    400010: Sphere01
+    400012: Sphere02
+    400014: Sphere03
+    400016: Sphere04
+    400018: wing
+    400020: wing01
+    400022: wing02
+    400024: wing03
+    400026: wingBack
+    400028: wingBack02
+    400030: wingBack03
+    400032: wingBack04
+    2300000: body
+    2300002: Box01
+    2300004: Box02
+    2300006: Cylinder01
+    2300008: Sphere01
+    2300010: Sphere02
+    2300012: Sphere03
+    2300014: Sphere04
+    2300016: wing
+    2300018: wing01
+    2300020: wing02
+    2300022: wing03
+    2300024: wingBack
+    2300026: wingBack02
+    2300028: wingBack03
+    2300030: wingBack04
+    3300000: body
+    3300002: Box01
+    3300004: Box02
+    3300006: Cylinder01
+    3300008: Sphere01
+    3300010: Sphere02
+    3300012: Sphere03
+    3300014: Sphere04
+    3300016: wing
+    3300018: wing01
+    3300020: wing02
+    3300022: wing03
+    3300024: wingBack
+    3300026: wingBack02
+    3300028: wingBack03
+    3300030: wingBack04
+    4300000: body
+    4300002: Box01
+    4300004: Box02
+    4300006: Cylinder01
+    4300008: Sphere01
+    4300010: Sphere02
+    4300012: Sphere03
+    4300014: Sphere04
+    4300016: wing
+    4300018: wing01
+    4300020: wing02
+    4300022: wing03
+    4300024: wingBack
+    4300026: wingBack02
+    4300028: wingBack03
+    4300030: wingBack04
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box01Mat
+    second: {fileID: 2100000, guid: 60b40a938896dbc458395f3e77e36a72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box02Mat
+    second: {fileID: 2100000, guid: 93f2b4ede8aa11b42ad6efe27e828c19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder01Mat
+    second: {fileID: 2100000, guid: ded3af75358abbc4d846b02a841667ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere01Mat
+    second: {fileID: 2100000, guid: 647abe41740658142a863d8b4d74191c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere02Mat
+    second: {fileID: 2100000, guid: 9316c2a4ad369a74dadc644f0e70b8b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere03Mat
+    second: {fileID: 2100000, guid: 129fb8d1f63270f4183389cbbcd2d2b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sphere04Mat
+    second: {fileID: 2100000, guid: 2577ea6e56df7f347870e58711861a57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bodyMat
+    second: {fileID: 2100000, guid: 9a433354401bd844f922701f272bd39e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing01Mat
+    second: {fileID: 2100000, guid: bcfc013f6335d61469e1160b4c92f79e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing02Mat
+    second: {fileID: 2100000, guid: 72a3ba9da2fb51d42859e42a2cc25ec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wing03Mat
+    second: {fileID: 2100000, guid: ed1ecdb621fbc254b8d68bd5ea57fa3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wingBack02Mat
+    second: {fileID: 2100000, guid: 5583654130ec2784191d7662ad07cbd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wingBack03Mat
+    second: {fileID: 2100000, guid: 95ccaff32ab3ae44184a66f723fe6e0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wingBack04Mat
+    second: {fileID: 2100000, guid: bfc169bc44314404dad738453a022246, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wingBackMat
+    second: {fileID: 2100000, guid: b2df2859b63d15643ab7606bd5803a5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wingMat
+    second: {fileID: 2100000, guid: cc77d9c5eda88634c8644a4c28a322cc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.001
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
