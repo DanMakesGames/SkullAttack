@@ -1,8 +1,8 @@
-# Created by Daniel Mann
-# DanielMakesGames@outlook.com
-# https://github.com/DanMakesGames
+#### Created by Daniel Mann
+#### DanielMakesGames@outlook.com
+#### https://github.com/DanMakesGames
 
-### Angry Skull Game
+# Angry Skull Game
 video: 
 
 ## Description:
