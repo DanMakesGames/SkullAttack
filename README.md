@@ -1,10 +1,10 @@
 #### Created by Daniel Mann
-#### DanielMakesGames@outlook.com
+#### DanielMannGames@outlook.com
 #### https://github.com/DanMakesGames
 
 # Angry Skull Game
 - video: https://youtu.be/dO6Dhcl2WLY
-- Download: https://mega.nz/#!FmwURDzQ!ciD87OUIkjw0DTriJapjIRCGPEzkberGQcPw2Hq5JOc
+- Download: https://mega.nz/#!s7REgQjJ!c2IqJL3Qcvxb4QMuKFP5H8FBZpSlf-6lz8x5ehbOnJI
 
 ## Description:
 Kill all the angry skulls!
