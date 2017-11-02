@@ -3,7 +3,8 @@
 #### https://github.com/DanMakesGames
 
 # Angry Skull Game
-video: 
+- video: https://youtu.be/dO6Dhcl2WLY
+- Download: https://mega.nz/#!FmwURDzQ!ciD87OUIkjw0DTriJapjIRCGPEzkberGQcPw2Hq5JOc
 
 ## Description:
 Kill all the angry skulls!
