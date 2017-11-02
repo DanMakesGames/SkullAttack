@@ -1,10 +1,17 @@
-## Created by Daniel Mann
+# Created by Daniel Mann
+# DanielMakesGames@outlook.com
+# https://github.com/DanMakesGames
 
-DanielMakesGames@outlook.com
+### Angry Skull Game
+video: 
 
-https://github.com/DanMakesGames
-
+## Description:
 Kill all the angry skulls!
+
+## Features:
+- Inventory system for multiple weapons
+- Homing Rocket Launcher
+- Angry Skulls
 
 ## Controls:
 - W,A,S,D - move player.
