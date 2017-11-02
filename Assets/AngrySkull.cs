@@ -7,6 +7,7 @@ public class AngrySkull : Enemy
 	private GameObject targetPlayer;
 	public float maxMoveSpeed = 1;
 	public float acceleration = 1;
+	public bool halt = false;
 	protected override void Initialize()
 	{
 		Health = 100;
@@ -18,7 +19,7 @@ public class AngrySkull : Enemy
 	protected override void Tick()
 	{
 		
-		if (targetPlayer != null) {
+		if (targetPlayer != null && halt != true) {
 
 			velocity += (targetPlayer.transform.position - transform.position).normalized * acceleration;
 			velocity = velocity.normalized * Mathf.Min (velocity.magnitude, maxMoveSpeed);

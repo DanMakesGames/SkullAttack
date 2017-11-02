@@ -124,20 +124,25 @@ namespace MyItem
 				LinkedListNode<Enemy> current = targets.First;
 				int texWidth = 100;
 				int texHeight = 100;
+				Texture tex = (Texture)Resources.Load ("Target");
 
 				for (int index = 0; index < targets.Count; index++) {
 					if (current != null) {
+						
 						Vector3 posOnScreen = ownerCamera.WorldToScreenPoint (current.Value.transform.position);
-						posOnScreen.y = Screen.height - posOnScreen.y;
-						Texture tex = (Texture)Resources.Load ("Target");
-						Rect myRect = new Rect (posOnScreen.x - texWidth / 2, posOnScreen.y - texHeight / 2, 100, 100);
 
-						Graphics.DrawTexture (myRect, tex);
+						if(posOnScreen.z >= 0 && posOnScreen.x <= ownerCamera.pixelWidth && posOnScreen.x >= 0 && posOnScreen.y <= ownerCamera.pixelHeight && posOnScreen.y >= 0) {
+							posOnScreen.y = Screen.height - posOnScreen.y;
+
+							Rect myRect = new Rect (posOnScreen.x - texWidth / 2, posOnScreen.y - texHeight / 2, texWidth, texHeight);
+
+							GUI.DrawTexture (myRect, tex);
+						}
+
 						current = current.Next;
 					}
 				}
 			}
-
 		}
 
 		public override void Tick()

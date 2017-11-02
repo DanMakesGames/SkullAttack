@@ -18,7 +18,7 @@ public class SkullAttackGameMode : MonoBehaviour {
 		}
 
 		if (count == 0) {
-			Application.Quit ();
+			//Application.Quit ();
 		}
 		
 	}
