@@ -29,6 +29,17 @@ public class AngrySkull : Enemy
 		}
 	}
 
+	void OnTriggerEnter(Collider hit) {
+		PlayerController playerCont = hit.gameObject.GetComponent<PlayerController> ();
+
+		if (playerCont == null)
+			return;
+		Hurt(0, velocity.normalized * (-1000));
+		//Debug.Log ("PLAYER HIT: " + name);
+		playerCont.Hurt (25);
+
+	}
+
 }
 
 

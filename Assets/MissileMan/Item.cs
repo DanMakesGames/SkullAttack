@@ -42,12 +42,12 @@ namespace MyItem
 		public abstract void Tick();
 		public virtual void GUITick () {}
 
-		public void OnEquip()
+		public virtual void OnEquip()
 		{
 		}
 
 
-		public void OnUnequip ()
+		public virtual void OnUnequip ()
 		{
 		}
 
@@ -99,10 +99,21 @@ namespace MyItem
 		enum WEAPON_STATE {START, GATHER_TARGETS, FIRE};
 		WEAPON_STATE wState = WEAPON_STATE.START;
 
+		public override void OnEquip()
+		{
+			ownerPlayer.reticleTex = (Texture) Resources.Load ("JavlinReticle");
+		}
+
+
+		public override void OnUnequip ()
+		{
+			ownerPlayer.reticleTex = null;
+		}
 
 		public Javlin ()
 		{
 			Initialize ("Jav3", new Vector3(0,-2,-3), Quaternion.Euler(0,-90,0));
+
 		}
 
 		public override void GUITick() {
@@ -115,14 +126,15 @@ namespace MyItem
 				int texHeight = 100;
 
 				for (int index = 0; index < targets.Count; index++) {
-				
-					Vector3 posOnScreen = ownerCamera.WorldToScreenPoint (current.Value.transform.position);
-					posOnScreen.y = Screen.height - posOnScreen.y;
-					Texture tex = (Texture)Resources.Load ("Untitled");
-					Rect myRect = new Rect (posOnScreen.x - texWidth / 2, posOnScreen.y - texHeight / 2, 100, 100);
+					if (current != null) {
+						Vector3 posOnScreen = ownerCamera.WorldToScreenPoint (current.Value.transform.position);
+						posOnScreen.y = Screen.height - posOnScreen.y;
+						Texture tex = (Texture)Resources.Load ("Target");
+						Rect myRect = new Rect (posOnScreen.x - texWidth / 2, posOnScreen.y - texHeight / 2, 100, 100);
 
-					Graphics.DrawTexture (myRect, tex);
-					current = current.Next;
+						Graphics.DrawTexture (myRect, tex);
+						current = current.Next;
+					}
 				}
 			}
 
@@ -190,9 +202,7 @@ namespace MyItem
 						GameObject missile = (GameObject) GameObject.Instantiate (Resources.Load("HomingMissile"), ownerPlayer.GetHeadLocation(), ownerPlayer.GetLookRotation());
 						if(targets.First.Value != null)
 							missile.GetComponent<HomingMissile> ().SetTarget (targets.First.Value.gameObject);
-						//GameObject.Instantiate (Resources.Load("BasicMissile"), ownerPlayer.GetHeadLocation(), ownerPlayer.GetLookRotation());
-						//missile.SetTarget (targets.First.Value.gameObject);
-						//targets.RemoveFirst ();
+						
 						missileShot++;
 						if (missileShot >= missilesPerTarget) {
 							missileShot = 0;
@@ -220,7 +230,16 @@ namespace MyItem
 			Initialize ("RPG 1", new Vector3(1,0,0), Quaternion.Euler(-90,0,0));
 			InitLauncher ("BasicMissile");
 		}
+		public override void OnEquip()
+		{
+			ownerPlayer.reticleTex = (Texture) Resources.Load ("RPGReticle");
+		}
 
+
+		public override void OnUnequip ()
+		{
+			ownerPlayer.reticleTex = null;
+		}
 
 	}
 
@@ -241,6 +260,17 @@ namespace MyItem
 				timeSinceLastShot = 0;
 				GameObject.Instantiate (Resources.Load(missileType), ownerPlayer.GetHeadLocation(), ownerPlayer.GetLookRotation());
 			}
+		}
+
+		public override void OnEquip()
+		{
+			ownerPlayer.reticleTex = (Texture) Resources.Load ("LAWReticle");
+		}
+
+
+		public override void OnUnequip ()
+		{
+			ownerPlayer.reticleTex = null;
 		}
 	}
 }

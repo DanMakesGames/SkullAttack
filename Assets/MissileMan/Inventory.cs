@@ -39,6 +39,7 @@ namespace MyInventory
 			if (equipped == null && storage.Count > 0) 
 			{
 				equipped = storage.Last;
+				equipped.Value.OnEquip ();
 			}
 
 		}
@@ -51,6 +52,8 @@ namespace MyInventory
 			if (equipped != null) 
 			{
 				LinkedListNode<Item> ItemToRemove = equipped;
+				equipped.Value.OnUnequip ();
+
 				if (storage.Count >= 2)
 					equipped = equipped.Next;
 				else
@@ -68,10 +71,12 @@ namespace MyInventory
 				if (nextNode == null) 
 				{
 					equipped = storage.First;
+					equipped.Value.OnEquip ();
 				} 
 				else 
 				{
 					equipped = nextNode;
+					equipped.Value.OnEquip ();
 				}
 
 			}
@@ -85,10 +90,12 @@ namespace MyInventory
 				if (previousNode == null) 
 				{
 					equipped = storage.Last;
+					equipped.Value.OnEquip ();
 				} 
 				else 
 				{
 					equipped = previousNode;
+					equipped.Value.OnEquip ();
 				}
 			}
 		}

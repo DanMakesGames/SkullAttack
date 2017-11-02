@@ -21,12 +21,13 @@ public abstract class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Tick ();
 		if (Health <= 0) 
 		{
 			OnDeath ();
 			Destroy (gameObject);
 		}
+		Tick ();
+
 	}
 
 	protected abstract void Tick ();
@@ -35,7 +36,6 @@ public abstract class Enemy : MonoBehaviour {
 	}
 	public void Hurt(float damage, Vector3 impact)
 	{
-		Debug.Log ("Got Hurt. Health: " + Health);
 		Health -= damage;
 		velocity += impact;
 	}
